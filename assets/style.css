@@ -1,0 +1,83 @@
+.maincon {
+	max-width: 960px;
+}
+
+.leftcol {
+	padding-left: 2em;
+}
+
+.letterbox {
+	padding: 0 5px;
+/*	margin: 0 5px;  */
+	min-width: 1em;
+	text-align: center;
+}
+
+#current-word {
+	display: inline-block;
+	text-align: center;
+	font-family: 'VT323', monospace;
+	font-size: 2em;
+}
+
+.jumbotron {
+text-align: center;
+}
+
+h1 {
+	margin: auto;
+	line-height: .7;
+	text-align: center;
+}
+
+#gallows1 {
+	transform: translate(-20px, -20px);
+}
+
+#gallows2{
+	transform: translate(-60px, -38px);
+}
+
+#rope {
+	transform: translate(24px, -56px);
+}
+
+#gallows3 {
+	transform: translate(-60px, -100px);
+}
+
+#headg {
+	transform: translate(24px, -100px);
+}
+
+#gallows4 {
+	transform: translate(-60px, -132px);
+}
+
+#arms {
+	transform: translate(29px, -147px) rotate(90deg);
+}
+
+#gallows5 {
+	transform: translate(-60px, -164px);
+}
+
+#torso {
+	transform: translate(25px, -210px);
+}
+
+#gallows6 {
+	transform: translate(-60px, -198px);
+}
+
+#legs {
+	transform: translate(29px, -250px) rotate(90deg);
+}
+
+#gallows7 {
+	transform: translate(-60px, -265px);
+}
+
+.invisible {
+	color: white;
+}
