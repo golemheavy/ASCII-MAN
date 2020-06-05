@@ -23,8 +23,6 @@ interface IWordsAndHints {
 };
 
 interface IGame {
-	words: string[];
-	hints: string[];
 	wordsAndHints: IWordsAndHints[];
 	guessesRemaining: number;
 	wins: number;
@@ -65,11 +63,11 @@ const game: IGame = {
 			hint: "I don't know what this is"
 		},
 		{
-			word: "homonculous",
+			word: "wendigo",
 			hint: "a mythical native American cannibal beast"
 		},
 		{
-			word: "wendigo",
+			word: "homonculous",
 			hint: "latin for \"little man\""
 		},
 		{
@@ -84,31 +82,6 @@ const game: IGame = {
 			word: "scramples",
 			hint: "not a real word"
 		}
-	],
-	words : [
-		"misanthrope",
-		"meander",
-		"lycanthropy",
-		"vertigo",
-		"chillblains",
-		"homonculous",
-		"wendigo",
-		"datura",
-		"mitre",
-		"scramples"
-	],
-	
-	hints : [
-		"doesn't play well with others",
-		"rivers do this",
-		"werewolf syndrome",
-		"an inner-ear condition and a classic Hitchcock thriller",
-		"I don't know what this is",
-		"latin for \"little man\"",
-		"a mythical native American cannibal beast",
-		"a hallucinagenic fruit",
-		"pope hat",
-		"not a real word"
 	],
 	
 	guessesRemaining : 5,
@@ -138,7 +111,7 @@ const game: IGame = {
 	},
 
 	newWordIndex: function(lastIndex) {
-		const newIndex = Math.floor(Math.random() * this.words.length);
+		const newIndex = Math.floor(Math.random() * this.wordsAndHints.length);
 		return newIndex === lastIndex ? this.newWordIndex(lastIndex) : newIndex;
 	},
 	
